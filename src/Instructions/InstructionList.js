@@ -6,7 +6,7 @@ export default function InstructionList({ instructions }) {
     <div>
       <h2>Your Instructions:</h2>
       {
-        instructions.map((instruction, i) => <Instruction key={instruction + i}>Instruction</Instruction>)
+        instructions.map((instruction, i) => <Instruction key={instruction + i} instruction={instruction}>Instruction</Instruction>)
       }
     </div>
   );

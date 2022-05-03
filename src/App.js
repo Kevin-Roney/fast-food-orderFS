@@ -14,7 +14,7 @@ function App() {
   const [sideId, setSideId] = useState(1);
   const [drinkId, setDrinkId] = useState(1);
   // //Instruction state
-  const [instructions, setInstructions] = useState('');
+  const [instructions, setInstructions] = useState(['']);
   const [instructionInput, setInstructionInput] = useState('');
   // submit function for InstructionForm
   function handleSubmit(e) {
@@ -47,7 +47,7 @@ function App() {
       <section className='instructions-input'>
         <InstructionForm 
           instructionInput={instructionInput}
-          setInstructionInput={instructionInput}
+          setInstructionInput={setInstructionInput}
           handleSubmit={handleSubmit}
         />
       </section>
