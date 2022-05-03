@@ -4,7 +4,7 @@ import OrderDropdowns from './OrderImages/OrderDropdowns';
 import InstructionForm from './Instructions/InstructionForm';
 import InstructionList from './Instructions/InstructionList';
 import './App.css';
-import { useState } from 'react/cjs/react.production.min';
+import { useState } from 'react';
 
 function App() {
   //OrderName state
@@ -13,10 +13,10 @@ function App() {
   const [foodId, setFoodId] = useState(1);
   const [sideId, setSideId] = useState(1);
   const [drinkId, setDrinkId] = useState(1);
-  //Instruction state
+  // //Instruction state
   const [instructions, setInstructions] = useState('');
   const [instructionInput, setInstructionInput] = useState('');
-  //submit function for InstructionForm
+  // submit function for InstructionForm
   function handleSubmit(e) {
     e.preventDefault();
     setInstructions([...instructions, instructionInput]);
