@@ -46,8 +46,6 @@ function App() {
       </section>
       <section className='instructions-input'>
         <InstructionForm 
-          instructions={instructions}
-          setInstructions={setInstructions}
           instructionInput={instructionInput}
           setInstructionInput={instructionInput}
           handleSubmit={handleSubmit}
