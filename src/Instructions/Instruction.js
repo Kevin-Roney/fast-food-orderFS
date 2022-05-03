@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default function Instruction() {
+export default function Instruction({ instruction }) {
   return (
-    <div>Instruction</div>
+    <div className='instruction'>
+      <p>{instruction}</p>
+    </div>
   );
 }
