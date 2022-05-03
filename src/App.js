@@ -1,4 +1,8 @@
-import logo from './logo.svg';
+import OrderName from './OrderName/OrderName';
+import OrderImages from './OrderImages/OrderImages';
+import OrderDropdowns from './OrderImages/OrderDropdowns';
+import InstructionForm from './Instructions/InstructionForm';
+import InstructionList from './Instructions/InstructionList';
 import './App.css';
 
 function App() {
