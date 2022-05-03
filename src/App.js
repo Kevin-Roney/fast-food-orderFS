@@ -8,7 +8,7 @@ import { useState } from 'react/cjs/react.production.min';
 
 function App() {
   //OrderName state
-  const [orderName, setOrderName] = useState('');
+  const [orderName, setOrderName] = useState('Customer Name');
   //OrderImages state
   const [foodId, setFoodId] = useState(1);
   const [sideId, setSideId] = useState(1);

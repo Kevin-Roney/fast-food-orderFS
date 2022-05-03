@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default function OrderName() {
+export default function OrderName({ setOrderName }) {
   return (
-    <div>OrderName</div>
+    <div>
+      Enter Name for Order:
+      <input onChange={e => setOrderName(e.target.value)}/>
+    </div>
   );
 }
