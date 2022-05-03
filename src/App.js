@@ -4,25 +4,59 @@ import OrderDropdowns from './OrderImages/OrderDropdowns';
 import InstructionForm from './Instructions/InstructionForm';
 import InstructionList from './Instructions/InstructionList';
 import './App.css';
+import { useState } from 'react/cjs/react.production.min';
 
 function App() {
+  //OrderName state
+  const [orderName, setOrderName] = useState('');
+  //OrderImages state
+  const [foodId, setFoodId] = useState(1);
+  const [sideId, setSideId] = useState(1);
+  const [drinkId, setDrinkId] = useState(1);
+  //Instruction state
+  const [instructions, setInstructions] = useState('');
+  const [instructionInput, setInstructionInput] = useState('');
+  //submit function for InstructionForm
+  function handleSubmit(e) {
+    e.preventDefault();
+    setInstructions([...instructions, instructionInput]);
+    setInstructionInput('');
+  }
   return (
     <div className="App">
       <section className='order-name'>
-        <OrderName />
+        <OrderName 
+          setOrderName={setOrderName}
+        />
         <h2>Order for: {orderName}</h2>
       </section>
       <section className='order-images'>
-        <OrderImages />
+        <OrderImages 
+          foodId={foodId}
+          sideId={sideId}
+          drinkId={drinkId}
+        />
       </section>
       <section className='order-dropdowns'>
-        <OrderDropdowns />
+        <OrderDropdowns 
+          setFoodId={setFoodId}
+          setSideId={setSideId}
+          setDrinkId={setDrinkId}
+        />
       </section>
       <section className='instructions-input'>
-        <InstructionForm />
+        <InstructionForm 
+          instructions={instructions}
+          setInstructions={setInstructions}
+          instructionInput={instructionInput}
+          setInstructionInput={instructionInput}
+          handleSubmit={handleSubmit}
+        />
       </section>
       <section className='instructions-list'>
-        <InstructionList />
+        <InstructionList 
+          instructions={instructions}
+        />
       </section>
     </div>
   );
