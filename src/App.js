@@ -24,7 +24,7 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>The Worlds Nicest Fast Food</h1>
+      <h1>The Worlds Nicest Fast Food!</h1>
       <div className='components'>
         <section className='order-name'>
           <OrderName 
