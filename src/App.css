@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-image: url(./background.jpg);
+  background-size: cover;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 img {
@@ -10,7 +14,23 @@ img {
 
 form{
   margin-top: 10px;
-  
+}
+
+.components {
+  display: grid;
+  grid-template-rows: 1fr 1fr .5fr .5fr 1fr;
+}
+
+.order-name {
+  background-color: rgba(252, 161, 161, 0.936);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.food-images {
+  background-color: rgba(252, 161, 161, 0.936);
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .dropdown {
@@ -20,37 +40,24 @@ form{
   justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.order-dropdowns {
+  background-color: rgba(252, 161, 161, 0.936);
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.instructions-input {
+  background-color: rgba(252, 161, 161, 0.936);
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.instructions-list {
+  background-color: rgba(252, 161, 161, 0.936);
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

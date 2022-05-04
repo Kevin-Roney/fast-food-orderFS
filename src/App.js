@@ -24,38 +24,41 @@ function App() {
   }
   return (
     <div className="App">
-      <section className='order-name'>
-        <OrderName 
-          setOrderName={setOrderName}
-        />
-        <h2>Order for: {orderName}</h2>
-      </section>
-      <section className='order-images'>
-        <OrderImages 
-          foodId={foodId}
-          sideId={sideId}
-          drinkId={drinkId}
-        />
-      </section>
-      <section className='order-dropdowns'>
-        <OrderDropdowns 
-          setFoodId={setFoodId}
-          setSideId={setSideId}
-          setDrinkId={setDrinkId}
-        />
-      </section>
-      <section className='instructions-input'>
-        <InstructionForm 
-          instructionInput={instructionInput}
-          setInstructionInput={setInstructionInput}
-          handleSubmit={handleSubmit}
-        />
-      </section>
-      <section className='instructions-list'>
-        <InstructionList 
-          instructions={instructions}
-        />
-      </section>
+      <h1>The Worlds Nicest Fast Food</h1>
+      <div className='components'>
+        <section className='order-name'>
+          <OrderName 
+            setOrderName={setOrderName}
+          />
+          <h2>Order for: {orderName}</h2>
+        </section>
+        <section className='order-images'>
+          <OrderImages 
+            foodId={foodId}
+            sideId={sideId}
+            drinkId={drinkId}
+          />
+        </section>
+        <section className='order-dropdowns'>
+          <OrderDropdowns 
+            setFoodId={setFoodId}
+            setSideId={setSideId}
+            setDrinkId={setDrinkId}
+          />
+        </section>
+        <section className='instructions-input'>
+          <InstructionForm 
+            instructionInput={instructionInput}
+            setInstructionInput={setInstructionInput}
+            handleSubmit={handleSubmit}
+          />
+        </section>
+        <section className='instructions-list'>
+          <InstructionList 
+            instructions={instructions}
+          />
+        </section>
+      </div>
     </div>
   );
 }
