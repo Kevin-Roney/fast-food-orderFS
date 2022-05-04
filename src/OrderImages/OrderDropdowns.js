@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function OrderDropdowns({ setFoodId, setSideId, setDrinkId }) {
   return (
-    <section>
+    <section className='dropdown'>
       <div className='food'>
         Select a food item:
         <select onChange={(e) => setFoodId(e.target.value)}>

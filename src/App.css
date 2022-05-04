@@ -4,6 +4,20 @@
 
 img {
   width: 200px;
+  height: 140px;
+  margin: 10px;
+}
+
+form{
+  margin-top: 10px;
+  
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
